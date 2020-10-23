@@ -69,7 +69,8 @@
                     <?php endif; ?>
                 </span>
                 <div class="note-list-comment">
-                    <?= $block->escapeHtml($_comment->getComment(), ['b', 'br', 'strong', 'i', 'u', 'a']) ?>
+                    <?= $block->escapeHtml($_comment->getComment(),
+                        ['a', 'b', 'br', 'i', 'li', 'ol', 'p', 'span', 'strong', 'u', 'ul']) ?>
                 </div>
             </li>
         <?php endforeach; ?>
